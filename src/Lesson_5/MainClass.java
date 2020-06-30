@@ -4,7 +4,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.CyclicBarrier;
 
 public class MainClass {
-    public static final int CARS_COUNT = 4;
+    public static final int CARS_COUNT = 7;
 
     public static CyclicBarrier cbReady = new CyclicBarrier(CARS_COUNT);
     public static final CountDownLatch cdlReady = new CountDownLatch(CARS_COUNT);

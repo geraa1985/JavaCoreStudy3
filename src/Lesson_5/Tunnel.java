@@ -8,7 +8,8 @@ public class Tunnel extends Stage {
         this.description = "Тоннель " + length + " метров";
     }
 
-    static Semaphore smp = new Semaphore(2);
+    private static final int count = (int) Math.floor(MainClass.CARS_COUNT / 2);
+    private static final Semaphore smp = new Semaphore(count);
 
     @Override
     public void go(Car c) {
